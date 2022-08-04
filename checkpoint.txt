@@ -1,0 +1,43 @@
+Q1
+surname=input('give your first name ')
+name=input('give your second name')
+print(name+' '+surname)
+Q2
+n=int(input('donner un entier'))
+n=str(n)
+a=n
+b=n+n
+c=n+n+n
+print(int(a)+int(b)+int(c))
+Q3
+n=int(input('donner un entier'))
+if n%2==0:
+    print('n est paire')
+else:
+    print('n est impaire')
+Q4
+for i in range(2000,3201):
+    if i%7==0 and i%5 !=0 :
+        print (i)
+Q5
+n=int(input('donner un entier'))#3
+fact = 1
+for i in range(1,n+1):
+    fact = fact * i
+print(fact)
+Q6
+ch=input('donner une chaine de caractère: ')
+for i in range (len(ch)):
+    if i%2 == 0:
+        ch = ch[:i] + ch[(i+1):]
+
+print(ch)
+Q7
+n=int(input('donner le montant '))
+if n>=500 :
+    p=((n*50)/100)
+elif n in range(200,500):
+    p=((n*30)/100)
+else:
+    p=((n*10)/100)
+print('la somme aprés la réduvtion est',p)
